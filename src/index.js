@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
-
+import CardComponent from './Card-Component';
 import reportWebVitals from './reportWebVitals';
 
 
 const App = () => {
   return (
     <div className="ui container comments">
-      <CommentDetail author="Sam" date="Today at 11:00AM" text="Great Job"/>
-      <CommentDetail author="Joey" date="Today at 4:00PM" text="Yeah I had fun!"/>
-      <CommentDetail author="Sarah" date="Today at 6:00PM" text="Me too!"/>
+      <CardComponent>
+        <CommentDetail author="Sam" date="Today at 11:00AM" text="Great Job"/>
+      </CardComponent>
+      <CardComponent>
+        <CommentDetail author="Joey" date="Today at 4:00PM" text="Yeah I had fun!"/>
+      </CardComponent>
+      <CardComponent>
+        <CommentDetail author="Sarah" date="Today at 6:00PM" text="Me too!"/>
+      </CardComponent>
     </div>
   );
 };
